@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../StyleSheet/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css"
+    />
+    <title>Frosted glass Credit Card</title>
+  </head>
+  <body>
+    <div class="card">
+      <form action="">
+        <h1 class="card__title">Enter payment Information</h1>
+        <div class="card__row">
+          <div class="card__col">
+            <label for="cardNumber" class="card__label">Card Number</label
+            ><input
+              type="text"
+              class="card__input card__input--large"
+              id="cardNumber"
+              placeholder="xxxx-xxxx-xxxx-xxxx"
+            />
+          </div>
+          <div class="card__col card_chip">
+            <img src="../img/chip.svg" alt="" />
+          </div>
+        </div>
+        <div class="card__row">
+          <div class="card__col">
+            <label for="cardExpiry" class="card__label">Expiry Date</label
+            ><input
+              type="text"
+              class="card__input"
+              id="cardExpiry"
+              placeholder="xx/xx"
+            />
+          </div>
+          <div class="card__col">
+            <label for="cardCcv" class="card__label">CCV</label
+            ><input
+              type="text"
+              class="card__input"
+              id="cardCcv"
+              placeholder="xxx"
+            />
+          </div>
+          <div class="card__col card__brand">
+            <i id="cardBrand"></i>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
+    <script src="../JavaScript/main.js"></script>
+  </body>
+</html>
